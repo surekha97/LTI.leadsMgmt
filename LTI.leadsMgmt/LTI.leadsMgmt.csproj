@@ -44,19 +44,28 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Leads\Leads.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\Leads\Leads.feature">
+      <FeatureId>{9dbbf2ed-877b-4139-a55d-8f45cda4c134}</FeatureId>
+    </None>
     <None Include="Features\LeadsLists\LeadsLists.feature">
       <FeatureId>{e829cba7-e543-4d29-b579-37ca6e911a98}</FeatureId>
     </None>
     <None Include="key.snk" />
+    <None Include="Leads\Leads.webpart" />
+    <None Include="Leads\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{46a4c009-81f8-419e-9d90-bb24dbeef2a9}</SharePointProjectItemId>
+    </None>
     <None Include="News\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e06e5f37-bfac-41df-8c0c-d96c67ed4f65}</SharePointProjectItemId>
     </None>
@@ -69,9 +78,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Features\Leads\Leads.Template.xml">
+      <DependentUpon>Leads.feature</DependentUpon>
+    </Content>
     <Content Include="Features\LeadsLists\LeadsLists.Template.xml">
       <DependentUpon>LeadsLists.feature</DependentUpon>
     </Content>
+    <Content Include="Leads\Elements.xml" />
     <Content Include="News\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

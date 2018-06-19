@@ -2,5 +2,6 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c0f8205e-7135-4d14-9b71-1bce077a9316" solutionId="c0f8205e-7135-4d14-9b71-1bce077a9316" resetWebServer="false" sharePointProductVersion="15.0" name="LTI.leadsMgmt" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
     <featureReference itemId="e829cba7-e543-4d29-b579-37ca6e911a98" />
+    <featureReference itemId="9dbbf2ed-877b-4139-a55d-8f45cda4c134" />
   </features>
 </package>
