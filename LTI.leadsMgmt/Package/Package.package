@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="c0f8205e-7135-4d14-9b71-1bce077a9316" 
+        solutionId="c0f8205e-7135-4d14-9b71-1bce077a9316" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="LTI.leadsMgmt"
+        sharePointProductVersion="15.0">
+</package>
